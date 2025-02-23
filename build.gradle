@@ -9,7 +9,7 @@ buildscript {
 }
 
 plugins {
-    //id 'org.springframework.boot' version '2.4.4'
+    id 'org.springframework.boot' version '2.4.4'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'application'
     id 'java'
@@ -111,8 +111,8 @@ build.doLast {
 
 artifacts {
     archives jar
-    archives fatJar
-    archives jarLib
+    //archives fatJar
+    //archives jarLib
     //archives fatJarLib
     //archives javadocJar
     //archives sourcesJar
@@ -245,6 +245,25 @@ dependencies {
     //implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.3'
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.27.0'
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.27.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+    implementation 'org.springframework.boot:spring-boot-starter-quartz'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+
+    implementation "io.springfox:springfox-bean-validators:2.9.2"
+    implementation "io.springfox:springfox-swagger-ui:2.9.2"
+    implementation ("io.springfox:springfox-swagger2:2.9.2") { exclude module: "mapstruct" }
+
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-gcp-dependencies', version: '1.2.7.RELEASE'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-gcp-starter-sql-mysql', version: '1.2.7.RELEASE'
 }
 
 test {
