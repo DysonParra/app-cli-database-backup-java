@@ -206,9 +206,9 @@ public class BackUpFrame extends JFrame {
     }//GEN-LAST:event_btnConfigActionPerformed
 
     /**
-     * TODO: Description of method {@code main}.
+     * Entrada principal del sistema.
      *
-     * @param args the command line arguments
+     * @param args argumentos de la linea de comandos.
      */
     public static void main(String args[]) {
         try {
