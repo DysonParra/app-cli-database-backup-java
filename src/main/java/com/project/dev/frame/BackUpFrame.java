@@ -40,7 +40,7 @@ public class BackUpFrame extends JFrame {
     private Calendar calendar;
 
     /**
-     * FIXME: Description of {@code BackUpFrame}. Creates new Frame
+     * FIXME: Description of method {@code BackUpFrame}. Creates new Frame
      *
      */
     public BackUpFrame() {
@@ -206,7 +206,7 @@ public class BackUpFrame extends JFrame {
     }//GEN-LAST:event_btnConfigActionPerformed
 
     /**
-     * TODO: Description of {@code main}.
+     * TODO: Description of method {@code main}.
      *
      * @param args the command line arguments
      */
@@ -238,7 +238,7 @@ public class BackUpFrame extends JFrame {
     // End of variables declaration//GEN-END:variables
 
     /**
-     * TODO: Description of {@code getDataBaseConfig}.
+     * TODO: Description of method {@code getDataBaseConfig}.
      *
      * @return
      */
@@ -247,7 +247,7 @@ public class BackUpFrame extends JFrame {
     }
 
     /**
-     * TODO: Description of {@code setDataBaseConfig}.
+     * TODO: Description of method {@code setDataBaseConfig}.
      *
      * @param dataBaseConfig
      */
@@ -256,7 +256,7 @@ public class BackUpFrame extends JFrame {
     }
 
     /**
-     * TODO: Description of {@code addText}.
+     * TODO: Description of method {@code addText}.
      *
      * @param text
      */
@@ -280,7 +280,7 @@ public class BackUpFrame extends JFrame {
     }
 
     /**
-     * TODO: Description of {@code printMessage}.
+     * TODO: Description of method {@code printMessage}.
      *
      * @param message
      */
