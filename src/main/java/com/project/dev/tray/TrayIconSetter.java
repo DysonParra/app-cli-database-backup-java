@@ -38,10 +38,10 @@ import static java.awt.Frame.NORMAL;
 public class TrayIconSetter {
 
     /**
-     * Método usado para añadir un TrayIcon a un JFrame.
+     * FIXME: Description of {@code setTrayIconToFrame}. Agrega un TrayIcon a un JFrame.
      *
-     * @param frame es el JFrame al que s ele añadirá un TrayIcon.
-     * @return Si fue posible asignar un trayIcon.
+     * @param frame es el JFrame al que se le agregará un TrayIcon.
+     * @return Si fue posible asignar un TrayIcon.
      */
     public static boolean setTrayIconToFrame(final JFrame frame) {
         if (SystemTray.isSupported()) {

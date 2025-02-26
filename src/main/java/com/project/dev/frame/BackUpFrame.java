@@ -40,7 +40,8 @@ public class BackUpFrame extends JFrame {
     private Calendar calendar;
 
     /**
-     * Creates new Frame
+     * FIXME: Description of {@code BackUpFrame}. Creates new Frame
+     *
      */
     public BackUpFrame() {
         initComponents();
@@ -75,6 +76,7 @@ public class BackUpFrame extends JFrame {
         btnEditTime.setText("Cambiar tiempo");
         btnEditTime.setPreferredSize(new java.awt.Dimension(85, 32));
         btnEditTime.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEditTimeActionPerformed(evt);
             }
@@ -92,6 +94,7 @@ public class BackUpFrame extends JFrame {
         btnConfig.setText("Cambiar configuración");
         btnConfig.setPreferredSize(new java.awt.Dimension(85, 32));
         btnConfig.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnConfigActionPerformed(evt);
             }
@@ -203,6 +206,8 @@ public class BackUpFrame extends JFrame {
     }//GEN-LAST:event_btnConfigActionPerformed
 
     /**
+     * TODO: Description of {@code main}.
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {
@@ -233,6 +238,7 @@ public class BackUpFrame extends JFrame {
     // End of variables declaration//GEN-END:variables
 
     /**
+     * TODO: Description of {@code getDataBaseConfig}.
      *
      * @return
      */
@@ -241,6 +247,7 @@ public class BackUpFrame extends JFrame {
     }
 
     /**
+     * TODO: Description of {@code setDataBaseConfig}.
      *
      * @param dataBaseConfig
      */
@@ -249,6 +256,7 @@ public class BackUpFrame extends JFrame {
     }
 
     /**
+     * TODO: Description of {@code addText}.
      *
      * @param text
      */
@@ -272,6 +280,7 @@ public class BackUpFrame extends JFrame {
     }
 
     /**
+     * TODO: Description of {@code printMessage}.
      *
      * @param message
      */
