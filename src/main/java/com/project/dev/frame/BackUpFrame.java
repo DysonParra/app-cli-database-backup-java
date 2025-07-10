@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {BackUpFrame}
+ * @overview        {BackUpFrame}
  *
  * @version         2.0
  *
@@ -208,7 +208,7 @@ public class BackUpFrame extends JFrame {
     /**
      * Entrada principal del sistema.
      *
-     * @param args argumentos de la linea de comandos.
+     * @param args argumentos pasados por consola.
      */
     public static void main(String args[]) {
         try {
