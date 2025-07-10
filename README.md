@@ -6,12 +6,12 @@ To get information of how this user is naming the repositories go [here](https:/
 The flags are from two types (you can use the two at same time):  
   * With value: an alphanumeric string started with '-' and the next argument must be the value of the flag.  
   Example:  -downloadPath documents   -sourceFile myFile.xml   -rootDir C:/project  
-  * Withouth value: an alphanumerirc string started with '--'.  
+  * without value: an alphanumerirc string started with '--'.  
   Example:  --useDefault  --notUseIncognito  --generateLogFile  --preserveTempFiles  
 
     For use the library you need to specify in source code a sets of flags:
     * Required: The flags that if are not included in the arguments the lib return an error.  
-    * Optional: The flags that can or not be included in the arguments withouth problem.  
+    * Optional: The flags that can or not be included in the arguments without problem.  
     * Default: The flags that are used if the cli arguments not specify any flag.  
 
 The required and the optional flags are a matrix (can be different size), that in each row defined a set of flags that are just like a XOR, only one of these flags must be included, and the default flags are a vector, example:
@@ -38,11 +38,11 @@ The operation is equal for all java repositories of this user.
 Use the command: gradlew build  
 It will generate four files where project-name is the name of the repository:
 - project-name.jar  
-  The fat jar file that include all dependencies into the same file and probably more bigger.
+  The fat jar file that include all dependencies into the same file and probably bigger.
 - project-name-min.jar  
   The default jar file that only include the source code of the repository.
 - project-name-lib.jar  
-  The fat jar that include all dependencies, but exclude the file "Application.java" (the main class) and the source files in the package "com.project.dev.tester", so you can create files in that package for tests and will not be included in the library (basically a lib is a jar withouth main class)
+  The fat jar that include all dependencies, but exclude the file "Application.java" (the main class) and the source files in the package "com.project.dev.tester", so you can create files in that package for tests and will not be included in the library (basically a lib is a jar without main class)
 - project-name-min-lib.jar  
 The same that the fat lib, but not include dependencies and is possibly smaller size.  
 Useful if you use third party libraries in the library that you are creating. For example the library that you are creating use selenium, if you use the fat lib it is probably very big size, so in this case you can use this lib, and in the project that uses this lib import all selenium dependencies.
